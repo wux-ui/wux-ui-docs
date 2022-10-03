@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Download - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Download</h1>
+        <p class="wux-jumbotron-subtitle">Download the WuX-UI CSS file.</p>
+      </div>
+      
+      <!--Download-->
+      <div class="wux-typo">
+        <h2>Compiled CSS</h2>
+        <p>Download the latest stable version of CSS files officially built by WuX-UI.</p>
+        <div>
+          <a href="https://github.com/wux-ui/wux-ui/releases" class="wux-btn">Download</a>
+        </div>
+        
+        <h2>Source Files</h2>
+        <p>The SCSS files used by WuX-UI to build CSS are all open source on Github and distributed under the MIT License. You should have Git, NodeJS, npm, and Dart-Sass before building.</p>
+        <div class="wux-row">
+          <div class="wux-col-xs-12 wux-col-sm-2 wux-col-md-1">
+            <a href="https://github.com/wux-ui/wux-ui" class="wux-btn">Github</a>
+          </div>
+          <div class="wux-col-xs-12 wux-col-sm-10 wux-col-md-11">
+            <pre><code>git clone https://github.com/wux-ui/wux-ui</code></pre>
+          </div>
+        </div>
+        
+        <h2>CDN</h2>
+        <h4>CSS</h4>
+        <pre><code>&lt;link href="https://cdn.jsdelivr.net/gh/wux-ui/wux-ui/dist/wux.css"&gt;</code></pre>
+        
+        <h4>Polyfill</h4>
+        <pre><code>&lt;link href="https://cdn.jsdelivr.net/gh/wux-ui/wux-ui/dist/polyfill/attr-polyfill/attr-polyfill.js"&gt;
+&lt;link href="https://cdn.jsdelivr.net/gh/wux-ui/wux-ui/dist/polyfill/dialog-polyfill/dialog-polyfill.js"&gt;</code></pre>
+        
+        <h2>What about npm?</h2>
+        <p>Sorry, we don't have a package manager like npm up yet, so stay tuned!</p>
+        
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="index.html" class="wux-btn wux-btn-text" float="left">Previous - QuickStart</a>
+        <a href="browser.html" class="wux-btn wux-btn-text" float="right">Next - Browser Compatibility</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

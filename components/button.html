@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Button - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Button</h1>
+        <p class="wux-jumbotron-subtitle">The Button component is used to guide the user through the most basic actions.</p>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Example</h2>
+      </div>
+      <div class="wux-row-sm-1 wux-row-md-2">
+        <div class="wux-col">
+          <button class="wux-btn">
+            Click Me~
+          </button>
+        </div>    
+        <div class="wux-col">
+          <div class="wux-typo" margin-bottom="10px">
+            <pre><code>&lt;button class="wux-btn"&gt;
+  Click Me~
+&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+        
+        <div class="wux-typo" margin-bottom="10px"> 
+          <h4>Colors</h4>
+          <p>The default Button color is Primary, and you can change the Button color using <code>wux-btn-[color]</code>, see <a href="../customize/colors.html">Customize/Colors</a> for details.</p>
+        </div>
+        <div>
+          <button class="wux-btn wux-btn-primary">Primary</button>
+          <button class="wux-btn wux-btn-secondary">Secondary</button>
+          <button class="wux-btn wux-btn-success">Success</button>
+          <button class="wux-btn wux-btn-info">Info</button>
+          <button class="wux-btn wux-btn-warning">Warning</button>
+          <button class="wux-btn wux-btn-error">Error</button>
+          <button class="wux-btn wux-btn-light">light</button>
+        </div>
+        
+        <div class="wux-typo" margin-bottom="10px"> 
+          <h4>Size</h4>
+          <p>Button has five sizes (xs, sm, md, lg, xl), use <code>wux-btn-[size]</code> to apply the style.</p>
+          <p>The default size is Medium.</p>
+        </div>
+        <div>
+          <button class="wux-btn wux-btn-xs">SuperSmall</button>
+          <button class="wux-btn wux-btn-sm">Small</button>
+          <button class="wux-btn wux-btn-md">Medium</button>
+          <button class="wux-btn wux-btn-lg">Large</button>
+          <button class="wux-btn wux-btn-xl">SuperLarge</button>
+        </div>
+        
+        <div class="wux-typo" margin-bottom="10px"> 
+          <h4>Styles</h4>
+          <p>Button has three basic styles, which are <code>wux-btn-solid</code>, <code>wux-btn-outline</code>, <code>wux-btn-text</code>.</p>
+        </div>
+        <div>
+          <button class="wux-btn wux-btn-solid">Solid</button>
+          <button class="wux-btn wux-btn-outline">Outline</button>
+          <button class="wux-btn wux-btn-text">Text</button>
+        </div>
+        
+        <div class="wux-typo" margin-bottom="10px"> 
+          <h4>Border-Styles</h4>
+          <p>Button has three border-styles, which are <code>wux-btn-square</code>, <code>wux-btn-default</code>, <code>wux-btn-round</code>.</p>
+        </div>
+        <div>
+          <button class="wux-btn wux-btn-square">Square</button>
+          <button class="wux-btn wux-btn-default">default</button>
+          <button class="wux-btn wux-btn-round">Round</button>
+        </div>
+        
+        <div class="wux-typo" margin-bottom="10px"> 
+          <h2>Customize</h2>
+          <h4>SCSS Variables</h4>
+          <pre><code class="language-scss">/*Default*/
+$button-solid-border-width
+$button-outline-border-width
+$button-margin-right
+$button-margin-bottom
+
+$button-fab-shadow
+$button-fab-hover-shadow
+
+// Color-Degree
+$button-background-degree
+$button-border-degree
+
+/*Dark*/
+$button-fab-shadow-dark
+$button-fab-hover-shadow-dark
+
+// Color-Degree
+$button-background-degree-dark
+$button-border-degree-dark</code></pre>
+      
+          <h4>CSS Variables</h4>
+          <pre><code class="language-css">:root {
+  --button-solid-border-width
+  --button-outline-border-width
+  --button-margin-right
+  --button-margin-bottom
+	
+  // FAB
+  --button-fab-shadow
+  --button-fab-hover-shadow
+  
+  // Color
+  --button-background-color-primary
+  --button-background-color-secondary
+  --button-background-color-success
+  --button-background-color-info
+  --button-background-color-warning
+  --button-background-color-error
+  --button-background-color-light
+  
+  --button-border-color-primary
+  --button-border-color-secondary
+  --button-border-color-success
+  --button-border-color-info
+  --button-border-color-warning
+  --button-border-color-error
+  --button-border-color-light
+  
+  --button-text-color-primary
+  --button-text-color-secondary
+  --button-text-color-success
+  --button-text-color-info
+  --button-text-color-warning
+  --button-text-color-error
+  --button-text-color-light
+
+  // Border-Radius
+  --button-border-size-square
+  --button-border-size-default
+  --button-border-size-default-xs
+  --button-border-size-default-sm
+  --button-border-size-default-md
+  --button-border-size-default-lg
+  --button-border-size-default-xl
+  --button-border-size-round
+  
+  // Padding
+  --button-padding-x-xs
+  --button-padding-x-sm
+  --button-padding-x-md
+  --button-padding-x-lg
+  --button-padding-x-xl
+  
+  --button-padding-y-xs
+  --button-padding-y-sm
+  --button-padding-y-md
+  --button-padding-y-lg
+  --button-padding-y-xl
+  
+  // Font Size
+  --button-font-size-xs
+  --button-font-size-sm
+  --button-font-size-md
+  --button-font-size-lg
+  --button-font-size-xl
+}</code></pre>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

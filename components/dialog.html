@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dialog - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Dialog</h1>
+        <p class="wux-jumbotron-subtitle">The Dialog component can be used as an important reminder to the user.</p>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Example</h2>
+      </div>
+      <div class="wux-row-sm-1 wux-row-md-2">
+        <div class="wux-col">
+          <dialog class="wux-dialog" id="testDialog">
+            <div class="wux-dialog-header">
+              <h1 class="wux-dialog-header-title">Test!</h1>
+            </div>
+            <div class="wux-dialog-body">
+              Test!
+            </div>
+            <div class="wux-dialog-footer">
+              <div class="wux-dialog-footer-group">
+                <form method="dialog">
+                  <button class="wux-btn wux-btn-secondary wux-btn-text" onclick="testDialog.close()">Cancel</button>
+                  <button class="wux-btn" type="submit">Send</button>
+                </form>
+              </div>
+            </div>
+          </dialog>
+          <!--Polyfill-->
+          <script>
+            var dialog = document.querySelector('testDialog'); // Catch ID
+            dialogPolyfill.registerDialog(testDialog);
+          </script>
+          <!--Polyfill-->
+          <button class="wux-btn" onclick="testDialog.showModal();">OpenDialog</button>
+        </div>
+        <div class="wux-col">
+          <div class="wux-typo" margin-bottom="10px">
+            <pre><code>&lt;dialog class="wux-dialog" id="testDialog"&gt;
+  &lt;div class="wux-dialog-header"&gt;
+    &lt;h1 class="wux-dialog-header-title"&gt;Test!&lt;/h1&gt;
+  &lt;/div&gt;
+  &lt;div class="wux-dialog-body"&gt;
+    Test!
+  &lt;/div&gt;
+  &lt;div class="wux-dialog-footer"&gt;
+    &lt;div class="wux-dialog-footer-group"&gt;
+      &lt;form method="dialog"&gt;
+        &lt;button class="wux-btn wux-btn-secondary wux-btn-text" onclick="testDialog.close()"&gt;Cancel&lt;/button&gt;
+        &lt;button class="wux-btn" type="submit"&gt;Send&lt;/button&gt;
+      &lt;/form&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/dialog&gt;
+&lt;!--Polyfill--&gt;
+&lt;script&gt;
+  var dialog = document.querySelector('testDialog'); // Catch ID
+  dialogPolyfill.registerDialog(testDialog);
+&lt;/script&gt;
+&lt;!--Polyfill--&gt;
+&lt;button class="wux-btn" onclick="testDialog.showModal();"&gt;OpenDialog&lt;/button&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px"> 
+        <h4>Also need Polyfill...</h4>
+        <p>Although HTML 5 native <code>Dialog</code> is currently supported by the latest browsers, Firefox and Safari are not yet supported in older versions (e.g. Safari 15.3 and Firefox 97) (even though Chrome has supported it for several years), see <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog">MDN</a> for details.</p>
+        <p>We suggest using <a href="https://a11y-dialog.netlify.app/">a11y-dialog</a> in MDN, but since this implementation is much different from the original, we suggest using <a href="https://github.com/GoogleChrome/dialog-polyfill">GoogleChrome/dialog-polyfill</a> directly, which is well supported in WuX-UI.</p>
+        <p>Therefore, for developers' convenience, <a href="https://github.com/wux-ui/wux-ui/tree/master/dist/polyfill/dialog-polyfill/dialog-polyfill.js">dialog-polyfill</a> and its <a href="https://github.com/wux-ui/wux-ui/tree/master/dist/polyfill/dialog-polyfill/LICENSE">LICENSE</a> are included in <a href="https://github.com/wux-ui/wux-ui/tree/master/dist/polyfill/dialog-polyfill">/dist/polyfill/dialog-polyfill.</a></p>
+      </div>
+        
+      <div class="wux-typo" margin-bottom="10px">  
+        <h2>Customize</h2>
+        <h4>SCSS Variables</h4>
+        <pre><code class="language-scss">/*Default*/
+$dialog-background-color
+$dialog-border
+$dialog-border-radius
+$dialog-padding
+$dialog-shadow
+
+$dialog-backdrop-color
+
+$dialog-header-text-color
+
+$dialog-body-padding-x
+$dialog-body-padding-y
+$dialog-body-font-size
+$dialog-body-text-color
+
+$dialog-footer-group-float
+
+/*Dark*/
+$dialog-background-color-dark
+$dialog-border-dark
+$dialog-shadow-dark
+
+$dialog-header-text-color-dark
+
+$dialog-body-text-color-dark</code></pre>
+      
+        <h4>CSS Variables</h4>
+        <pre><code class="language-css">:root {
+  --dialog-background-color
+	--dialog-border
+	--dialog-border-radius
+	--dialog-padding
+	--dialog-shadow
+
+	--dialog-backdrop-color:
+
+	--dialog-body-padding-x
+	--dialog-body-padding-y
+	--dialog-body-font-size
+	--dialog-body-text-color
+
+	--dialog-footer-group-float
+}</code></pre>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

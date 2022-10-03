@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Utilities Introduction - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Utilities Introduction</h1>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Intro</h2>
+        <p>WuX-UI has a very powerful Utilities System <span font-size="8px" vertical-align="top">Alpha</span>. With it, you can easily define CSS values in HTML directly.</p>
+        <p>Although the system is still unstable and requires some functionality through Polyfill. However, <a href="https://developer.mozilla.org/zh-TW/docs/Web/CSS/attr">this feature</a> was defined 10 years ago in <a href="https://www.w3.org/TR/2011/WD-css3-values-20110906/#attr">CSS-Values-3 20110906</a> (It has recently been postponed to <a href="https://w3c.github.io/csswg-drafts/css-values-5/#attr-notation">CSS-Values-5</a> and does not appear after <a href="https://www.w3.org/TR/2021/WD-css-values-4-20211016/">CSS-Values-4 20211016</a>, which is sad.), and it is believed that browser vendors will soon support this feature.</p>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Polyfill</h2>
+        <p>Polyfill must be used to support WuX-UI Utiltiles System <span font-size="8px" vertical-align="top">Alpha</span> before the browser supports the attr() function. </p>
+        <p>We recommend using <a href="https://github.com/wux-ui/wux-ui/tree/master/dist/polyfill/attr-polyfill">attr-polyfill</a> provided by <a href="https://zhangxinxu.com/">ZhangXinXu</a>.</p>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Will support in the future</h2>
+        <p>Future Utilities will support settings in the Before and After Pseudo-element , and support more CSS attributes.</p>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

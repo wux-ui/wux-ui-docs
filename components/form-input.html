@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form-Input - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Form-Input</h1>
+        <p class="wux-jumbotron-subtitle">The Form-Input component is an input box, which can be divided into single line and multi-line.</p>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Example</h2>
+      </div>
+      <div class="wux-row-sm-1 wux-row-md-2">
+        <div class="wux-col">
+          <input class="wux-form-input wux-form-input-md" placeholder="Input"/>
+        </div>
+        <div class="wux-col">
+          <div class="wux-typo" margin-bottom="10px">
+            <pre><code>&lt;input class="wux-form-input" placeholder="md"/&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px"> 
+        <h4>Size</h4>
+        <p>Button has five sizes (xs, sm, md, lg, xl), use <code>wux-form-input-[size]</code> to apply the style.</p>
+        <p>The default size is Medium.</p>
+      </div>
+      <div>
+        <div class="wux-row-sm-2 wux-row-lg-6">
+          <div class="wux-col">
+            <input class="wux-form-input wux-form-input-xs" placeholder="xs"/>
+          </div>
+          <div class="wux-col">
+            <input class="wux-form-input wux-form-input-sm" placeholder="sm"/>
+          </div>
+          <div class="wux-col">
+            <input class="wux-form-input wux-form-input-md" placeholder="md"/>
+          </div>
+          <div class="wux-col">
+            <input class="wux-form-input wux-form-input-lg" placeholder="lg"/>
+          </div>
+          <div class="wux-col">
+            <input class="wux-form-input wux-form-input-xl" placeholder="xl"/>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px"> 
+        <h4>Disabled</h4>
+        <p>The Form-Input component supports the use of HTML's Disabled attribute.</p>
+      </div>
+      <div>
+        <div class="wux-row-sm-2 wux-row-lg-6">
+          <div class="wux-col">
+            <input class="wux-form-input" placeholder="Disabled" disabled/>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px"> 
+        <h4>Validation</h4>
+        <p>The Form-Input component supports type validation using HTML's built-in type validation mechanism.</p>
+      </div>
+      <div>
+        <div class="wux-row-sm-2 wux-row-lg-4">
+          <div class="wux-col">
+            <input class="wux-form-input" placeholder="You can only enter the URL." type="URL"/>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px"> 
+        <h4>Textarea</h4>
+        <p>The Form-Input component can also be used in a textarea.</p>
+      </div>
+      <div>
+        <div class="wux-row-sm-2 wux-row-lg-4">
+          <div class="wux-col">
+            <textarea class="wux-form-input" placeholder="This is a Textarea."></textarea>
+          </div>
+        </div>
+      </div>
+        
+      <div class="wux-typo" margin-bottom="10px">  
+        <h2>Customize</h2>
+        <h4>SCSS Variables</h4>
+        <pre><code class="language-scss">/*Default*/
+$form-input-background
+$form-input-text-color
+$form-input-border-color
+$form-input-border-width
+$form-input-border-radius
+$form-input-margin-bottom
+
+$form-input-hover-background
+$form-input-hover-border-color
+$form-input-hover-border-width
+$form-input-hover-text-color
+$form-input-hover-shadow
+
+$form-input-focus-background
+$form-input-focus-border-color
+$form-input-focus-border-width
+$form-input-focus-text-color
+$form-input-focus-shadow
+
+$form-input-invalid-background
+$form-input-invalid-border-color
+$form-input-invalid-border-width
+$form-input-invalid-text-color
+$form-input-invalid-shadow
+
+$form-input-disabled-opacity
+
+$imported-size
+
+/*
+ * Color-Degree is used to obtain the colors defined in customize/color/colors using Map. It is not recommended to modify Map directly to replace saturation.
+ */
+
+/*Dark*/
+$form-input-background-dark
+$form-input-text-color-dark
+$form-input-border-color-dark
+
+$form-input-hover-background-dark
+$form-input-hover-border-color-dark
+$form-input-hover-text-color-dark
+$form-input-hover-shadow-dark
+
+$form-input-focus-background-dark
+$form-input-focus-border-color-dark
+$form-input-focus-text-color-dark
+$form-input-focus-shadow-dark
+
+$form-input-invalid-background-dark
+$form-input-invalid-border-color-dark
+$form-input-invalid-text-color-dark
+$form-input-invalid-shadow-dark
+
+$form-input-disabled-opacity-dark</code></pre>
+      
+        <h4>CSS Variables</h4>
+        <pre><code class="language-css">:root {
+  --form-input-background
+	--form-input-border-color
+	--form-input-border-width
+	--form-input-border-radius
+	--form-input-margin-bottom
+	--form-input-text-color
+	
+	--form-input-hover-background
+	--form-input-hover-border-color
+	--form-input-hover-border-width
+	--form-input-hover-shadow
+	--form-input-hover-text-color
+	
+	--form-input-focus-background
+	--form-input-focus-border-color
+	--form-input-focus-border-width
+	--form-input-focus-shadow
+	--form-input-focus-text-color
+	
+	--form-input-invalid-background
+	--form-input-invalid-border-color
+	--form-input-invalid-border-width
+	--form-input-invalid-text-color
+	--form-input-invalid-shadow
+
+	--form-input-disabled-opacity
+
+	--form-input-padding-x-xs
+	--form-input-padding-x-sm
+	--form-input-padding-x-md
+	--form-input-padding-x-lg
+	--form-input-padding-x-xl
+
+	--form-input-padding-y-xs
+	--form-input-padding-y-sm
+	--form-input-padding-y-md
+	--form-input-padding-y-lg
+	--form-input-padding-y-xl
+
+	--form-input-font-size-xs
+	--form-input-font-size-sm
+	--form-input-font-size-md
+	--form-input-font-size-lg
+	--form-input-font-size-xl
+
+	// border-radius
+	--form-input-border-radius-xs
+	--form-input-border-radius-sm
+	--form-input-border-radius-md
+	--form-input-border-radius-lg
+	--form-input-border-radius-xl
+}</code></pre>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

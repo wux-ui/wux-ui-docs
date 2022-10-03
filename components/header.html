@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Header - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Header</h1>
+        <p class="wux-jumbotron-subtitle">The Header component is placed at the top of the page and is used to navigate the page.</p>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Example</h2>
+      </div>
+      <div class="wux-row-sm-1 wux-row-md-2">
+        <div class="wux-col">
+          <header class="wux-header">
+            <span class="wux-header-title">Title</span>
+            <button class="wux-header-small-option-group">Menu</button>
+            <ul class="wux-header-option-group">
+              <li class="wux-header-option" href="https://github.com/wux-ui/wux-ui">Option</li>
+              <li class="wux-header-option wux-header-option-bold" href="https://wux-ui.tk/">Bold</li>
+            </ul>
+          </header>
+        </div>
+        <div class="wux-col">
+          <div class="wux-typo" margin-bottom="10px">
+            <pre><code>&lt;header class="wux-header"&gt;
+  &lt;span class="wux-header-title"&gt;Title&lt;/span&gt;
+  &lt;button class="wux-header-small-option-group"&gt;Menu&lt;/button&gt;
+  &lt;ul class="wux-header-option-group"&gt;
+    &lt;li class="wux-header-option" href="https://github.com/wux-ui/wux-ui"&gt;Option&lt;/li&gt;
+    &lt;li class="wux-header-option wux-header-option-bold" href="https://wux-ui.tk/"&gt;Bold&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/header&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Fix it</h2>
+        <p>The component has a <code>wux-header-fixed</code> class to hold it at the top, but the Body must use the <code>wux-header-fixed-margin</code> class.</p>
+      </div>
+        
+      <div class="wux-typo" margin-bottom="10px">  
+        <h2>Customize</h2>
+        <h4>SCSS Variables</h4>
+        <pre><code class="language-scss">/*Default*/
+$header-background
+$header-font-size
+$header-padding-x
+$header-padding-y
+$header-text-color
+
+$header-title-text-color
+
+$header-option-border-radius
+$header-option-padding-x
+$header-option-padding-y
+$header-option-space
+$header-option-text-color
+
+$header-option-hover-background-color
+
+$header-fixed-background
+$header-fixed-shadow
+$header-fixed-text-color
+
+$header-small-option-group-padding
+
+$header-option-bold-background-color
+$header-option-bold-text-color
+
+/*Dark*/
+$header-background-dark
+$header-text-color-dark
+
+$header-title-text-color-dark
+
+$header-fixed-background-dark
+$header-fixed-text-color-dark
+$header-fixed-shadow-dark
+
+$header-option-text-color-dark
+
+$header-option-hover-background-color-dark
+
+$header-option-bold-background-color-dark
+$header-option-bold-text-color-dark</code></pre>
+      
+        <h4>CSS Variables</h4>
+        <pre><code class="language-css">:root {
+  --header-background
+  --header-font-size
+  --header-padding-x
+  --header-padding-y
+  --header-text-color
+  
+  --header-title-text-color
+  
+  --header-option-border-radius
+  --header-option-padding-x
+  --header-option-padding-y
+  --header-option-space
+  --header-option-text-color
+  
+  --header-option-hover-background-color
+  
+  --header-fixed-background
+  --header-fixed-shadow
+  --header-fixed-text-color
+  
+  --header-small-option-group-padding
+  
+  --header-option-bold-background-color
+  --header-option-bold-text-color
+}</code></pre>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tab - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Tab</h1>
+        <p class="wux-jumbotron-subtitle">The Tab component is used to distinguish between multiple tabs and select them.</p>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Example</h2>
+      </div>
+      <div class="wux-row-sm-1 wux-row-md-2">
+        <div class="wux-col">
+          <div class="wux-tab">
+            <input class="wux-tab-item" type="radio" name="tab-ex" id="tab-1" checked />
+            <label class="wux-tab-item" for="tab-1">1</label>
+            <div class="wux-tab-content">
+              Test For #1
+            </div>
+            <input class="wux-tab-item" type="radio" name="tab-ex" id="tab-2"/>
+            <label class="wux-tab-item" for="tab-2">2</label>
+            <div class="wux-tab-content">
+              Test For #2
+            </div>
+            <input class="wux-tab-item" type="radio" name="tab-ex" id="tab-3"/>
+            <label class="wux-tab-item" for="tab-3">3</label>
+            <div class="wux-tab-content">
+              Test For #3
+            </div>
+          </div>
+        </div>
+        <div class="wux-col">
+          <div class="wux-typo" margin-bottom="10px">
+            <pre><code>&lt;div class="wux-tab"&gt;
+  &lt;input class="wux-tab-item" type="radio" name="tab-ex" id="tab-1" checked /&gt;
+  &lt;label class="wux-tab-item" for="tab-1"&gt;1&lt;/label&gt;
+  &lt;div class="wux-tab-content"&gt;
+    Test For #1
+  &lt;/div&gt;
+  &lt;input class="wux-tab-item" type="radio" name="tab-ex" id="tab-2"/&gt;
+  &lt;label class="wux-tab-item" for="tab-2"&gt;2&lt;/label&gt;
+  &lt;div class="wux-tab-content"&gt;
+    Test For #2
+  &lt;/div&gt;
+  &lt;input class="wux-tab-item" type="radio" name="tab-ex" id="tab-3"/&gt;
+  &lt;label class="wux-tab-item" for="tab-3"&gt;3&lt;/label&gt;
+  &lt;div class="wux-tab-content"&gt;
+    Test For #3
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+        
+      <div class="wux-typo" margin-bottom="10px">  
+        <h2>Customize</h2>
+        <h4>SCSS Variables</h4>
+        <pre><code class="language-scss">/*Default*/
+$tab-item-background
+$tab-item-border
+$tab-item-border-radius
+$tab-item-padding
+$tab-item-text-color
+
+$tab-item-focus-background
+$tab-item-focus-border-color
+$tab-item-focus-text-color
+
+$tab-content-padding
+$tab-content-margin
+
+/*Dark*/
+$tab-item-background-dark
+$tab-item-border-dark
+$tab-item-text-color-dark
+
+$tab-item-focus-background-dark
+$tab-item-focus-border-color-dark
+$tab-item-focus-text-color-dark</code></pre>
+      
+        <h4>CSS Variables</h4>
+        <pre><code class="language-css">:root {
+  --tab-item-background
+  --tab-item-border
+  --tab-item-border-radius
+  --tab-item-padding
+  --tab-item-text-color
+  
+  --tab-item-focus-background
+  --tab-item-focus-border-color
+  --tab-item-focus-text-color
+  
+  --tab-content-padding
+  --tab-content-margin
+}</code></pre>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

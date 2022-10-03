@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form-Select - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Form-Select</h1>
+        <p class="wux-jumbotron-subtitle">The Form-Select component is single-selectable only and takes up only a line of space.</p>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Example</h2>
+      </div>
+      <div class="wux-row-sm-1 wux-row-md-2">
+        <div class="wux-col">
+          <select class="wux-form-select">
+            <option>This?</option>
+            <option>This?</option>
+            <option>or This?</option>
+          </select>
+        </div>
+        <div class="wux-col">
+          <div class="wux-typo" margin-bottom="10px">
+            <pre><code>&lt;select class="wux-form-select"&gt;
+  &lt;option&gt;This?&lt;/option&gt;
+  &lt;option&gt;This?&lt;/option&gt;
+  &lt;option&gt;or This?&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+        
+      <div class="wux-typo" margin-bottom="10px">  
+        <h2>Customize</h2>
+        <h4>SCSS Variables</h4>
+        <pre><code class="language-scss">/*Default*/
+$form-select-background-color
+$form-select-border-color
+$form-select-border-width
+$form-select-border-radius
+$form-select-padding-x
+$form-select-padding-y
+$form-select-text-color
+
+$form-select-hover-shadow
+
+$form-select-focus-border
+$form-select-focus-shadow
+
+/*Dark*/
+$form-select-background-color-dark
+$form-select-border-color-dark
+$form-select-text-color-dark
+
+$form-select-hover-shadow-dark
+
+$form-select-focus-border-dark
+$form-select-focus-shadow-dark</code></pre>
+      
+        <h4>CSS Variables</h4>
+        <pre><code class="language-css">:root {
+  --form-select-background-color
+  --form-select-border-color
+  --form-select-border-width
+  --form-select-border-radius
+  --form-select-padding-x
+  --form-select-padding-y
+  --form-select-text-color
+  
+  --form-select-hover-shadow
+  
+  --form-select-focus-border
+  --form-select-focus-shadow
+}</code></pre>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

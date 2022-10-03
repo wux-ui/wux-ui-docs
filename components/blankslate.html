@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blankslate - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Blankslate</h1>
+        <p class="wux-jumbotron-subtitle">The Blankslate component provides error messages when the original information is missing.</p>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Example</h2>
+      </div>
+      <div class="wux-row-sm-1 wux-row-md-2">
+        <div class="wux-col">
+          <div class="wux-blankslate">
+            <img src="https://avatars.githubusercontent.com/u/108740219?s=200&v=4" class="wux-blankslate-icon"/>
+            <h1 class="wux-blankslate-title">This is a Blankslate!</h1>
+            <p class="wux-blankslate-subtitle">Yeah, Blankslate!</p>
+            <div class="wux-blankslate-button-group">
+              <button class="wux-btn">Great!</button>
+              <button class="wux-btn wux-btn-text">Uhh...</button>
+            </div>
+          </div>
+        </div>
+        <div class="wux-col">
+          <div class="wux-typo" margin-bottom="10px">
+            <pre><code>&lt;div class="wux-blankslate"&gt;
+  &lt;img src="https://avatars.githubusercontent.com/u/108740219?s=200&v=4" class="wux-blankslate-icon"/&gt;
+  &lt;h1 class="wux-blankslate-title"&gt;This is a Blankslate!&lt;/h1&gt;
+  &lt;p class="wux-blankslate-subtitle"&gt;Yeah, Blankslate!&lt;/p&gt;
+  &lt;div class="wux-blankslate-button-group"&gt;
+    &lt;button class="wux-btn"&gt;Great!&lt;/button&gt;
+    &lt;button class="wux-btn wux-btn-text"&gt;Uhh...&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="wux-typo" margin-bottom="10px">  
+        <h2>Customize</h2>
+        <h4>SCSS Variables</h4>
+        <pre><code class="language-scss">/*Default*/
+$blankslate-width
+
+$blankslate-title-font-size
+$blankslate-title-text-color
+
+$blankslate-subtitle-font-size
+$blankslate-subtitle-text-color
+
+$blankslate-icon-size
+$blankslate-icon-border-radius
+
+/*Dark*/
+$blankslate-title-text-color-dark
+$blankslate-subtitle-text-color-dark</code></pre>
+      
+        <h4>CSS Variables</h4>
+        <pre><code class="language-css">:root {
+  --blankslate-width
+
+  --blankslate-title-font-size
+  --blankslate-title-text-color
+
+  --blankslate-subtitle-font-size
+  --blankslate-subtitle-text-color	
+
+  --blankslate-icon-size
+  --blankslate-icon-border-radius
+}</code></pre>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

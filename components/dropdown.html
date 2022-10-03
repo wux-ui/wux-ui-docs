@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dropdown - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Dropdown</h1>
+        <p class="wux-jumbotron-subtitle">The Dropdown component is used to hold less important content in a limited space.</p>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Example</h2>
+      </div>
+      <div class="wux-row-sm-1 wux-row-md-2">
+        <div class="wux-col">
+          <span class="wux-dropdown">
+            <button class="wux-btn wux-dropdown-trigger">
+              Dropdown!
+            </button>
+            <ul class="wux-dropdown-menu">
+              <li class="wux-dropdown-menu-header">User</li>
+              <li class="wux-dropdown-item">My Homepage</li>
+              <li class="wux-dropdown-item">My Project</li>
+              <li class="wux-dropdown-item">My Stars</li>
+              <li class="wux-dropdown-menu-divider"></li>
+              <li class="wux-dropdown-item">Close</li>
+            </ul>
+          </span>
+        </div>
+        <div class="wux-col">
+          <div class="wux-typo" margin-bottom="10px">
+            <pre><code>&lt;span class="wux-dropdown"&gt;
+  &lt;button class="wux-btn wux-dropdown-trigger"&gt;
+    Dropdown!
+  &lt;/button&gt;
+  &lt;ul class="wux-dropdown-menu"&gt;
+    &lt;li class="wux-dropdown-menu-header"&gt;User&lt;/li&gt;
+    &lt;li class="wux-dropdown-item"&gt;My Homepage&lt;/li&gt;
+    &lt;li class="wux-dropdown-item"&gt;My Project&lt;/li&gt;
+    &lt;li class="wux-dropdown-item"&gt;My Stars&lt;/li&gt;
+    &lt;li class="wux-dropdown-menu-divider"&gt;&lt;/li&gt;
+    &lt;li class="wux-dropdown-item"&gt;Close&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/span&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+        
+      <div class="wux-typo" margin-bottom="10px">  
+        <h2>Customize</h2>
+        <h4>SCSS Variables</h4>
+        <pre><code class="language-scss">/*Default*/
+$dropdown-menu-background
+$dropdown-menu-border
+$dropdown-menu-border-radius
+$dropdown-menu-shadow
+$dropdown-menu-padding-x
+$dropdown-menu-padding-y
+$dropdown-menu-width
+
+$dropdown-item-border-radius
+$dropdown-item-text-color
+$dropdown-item-padding-x
+$dropdown-item-padding-y
+
+$dropdown-item-hover-degree
+$dropdown-item-hover-background
+$dropdown-item-hover-text-color
+
+$dropdown-menu-header-font-size
+$dropdown-menu-header-text-color
+$dropdown-menu-header-margin-left
+$dropdown-menu-header-margin-y
+
+$dropdown-menu-divider-border
+$dropdown-menu-divider-margin
+
+/*Dark*/
+$dropdown-menu-background-dark
+$dropdown-menu-border-dark
+$dropdown-menu-shadow-dark
+
+$dropdown-item-text-color-dark
+
+$dropdown-item-hover-degree-dark
+$dropdown-item-hover-background-dark
+$dropdown-item-hover-text-color-dark
+
+$dropdown-menu-header-text-color-dark
+
+$dropdown-menu-divider-border-dark</code></pre>
+      
+        <h4>CSS Variables</h4>
+        <pre><code class="language-css">:root {
+  --card-border-color
+  --card-border-radius
+  --card-border-width
+  --card-background-color
+  --card-shadow
+  --card-hover-shadow
+  --card-text-color;
+  --card-margin
+  
+  --card-body-padding
+  --card-body-font-size
+  
+  --card-flat-background
+  --card-flat-border
+}</code></pre>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>

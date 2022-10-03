@@ -1,131 +1,670 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WuX-UI - A Modern CSS Framework.</title>
+    <title>Docs - WuX-UI</title>
     <link rel="icon" href="src/img/logo.svg">
     <link href="src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="src/js/html-import/html-import.js"></script>
+    <script src="src/js/html-import/html-import-polyfill.js"></script>
     <!--Polyfill-->
     <script src="src/js/attr-polyfill/attr-polyfill.js"></script>
     <script src="src/js/dialog-polyfill/dialog-polyfill.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
   </head>
-  <body>
-    <div class="wux-container">
-      <nav class="wux-header">
-        <span class="wux-header-title">WuX-UI</span>
-        <button class="wux-header-small-option-group">Menu</button>
-        <ul class="wux-header-option-group">
-          <li class="wux-header-option"><a href="https://docs.wux-ui.tk/">Docs</a></li>
-          <li class="wux-header-option"><a href="https://github.com/wux-ui/wux-ui">Github</a></li>
-        </ul>
-      </nav>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="include/header.html" is="ui-import">
     
-      <div class="wux-jumbotron" align="center">
-        <img src="src/img/logo.svg" width="120px" height="120px"/>
-        <h1 class="wux-jumbotron-title">
-          <b class="wux-jumbotron-title-bold">WuX-UI</b>
-          <br> 
-          A Modern CSS Framework.
-        </h1>
-        <p class="wux-jumbotron-subtitle">Use WuX-UI, build beautiful and responsive site.</p>
-        <div class="wux-jumbotron-btn-group">
-          <a href="https://docs.wux-ui.tk/" class="wux-btn">Get Start</a>
-          <a href="https://github.com/wux-ui" class="wux-btn wux-btn-secondary wux-btn-text">Github</a>
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Docs <span class="wux-tag" font-size="16px" vertical-align="top">0.1.0</span></h1>
+        <p class="wux-jumbotron-subtitle"><b>WuX</b>ian425's <b>U</b>ser-<b>I</b>nterface Framework.</p>
+      </div>
+      
+      <!--Get Start-->
+      <h2>Get Start</h2>
+      <div class="wux-row-xs-1 wux-row-md-3 wux-row-lg-3">
+        <!--Quick Start-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Quick Start</b>
+              <div margin-top="6px">
+                Quickly produce projects with WuX-UI.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="start/index.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Download-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Download</b>
+              <div margin-top="6px">
+                Download the WuX-UI CSS file.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="start/download.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Browser-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Browser compatibility</b>
+              <div margin-top="6px">
+                WuX-UI Browser Compatibility.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="start/browser.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
         </div>
       </div>
       
-      <div class="wux-row-xs-1 wux-row-sm-2 wux-row-md-4">
+      <!--Components-->
+      <h2>Components</h2>
+      <div class="wux-row-xs-1 wux-row-md-2 wux-row-lg-4">
+        <!--Alert-->
         <div class="wux-col">
-          <div class="wux-card wux-card-flat">
+          <div class="wux-card wux-card-hover">
             <div class="wux-card-body">
-              <b>Modern</b>
+              <b>Alert</b>
               <div margin-top="6px">
-                WuX-UI is designed to be uniform and modern, Meet the public aesthetic.
+                The Alert component feedback to users on various messages using simple component prompts.
               </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/alert.html" class="wux-btn wux-btn-text">Go</a>
             </div>
           </div>
         </div>
+        <!--Badge-->
         <div class="wux-col">
-          <div class="wux-card wux-card-flat">
+          <div class="wux-card wux-card-hover">
             <div class="wux-card-body">
-              <b>No JavaScript</b>
+              <b>Badge</b>
               <div margin-top="6px">
-                WuX-UI uses pure CSS and does not require the introduction of a large JavaScript library.
+                The Badge component is a simple and clear numeric prompt in the top right corner of the component.
               </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/badge.html" class="wux-btn wux-btn-text">Go</a>
             </div>
           </div>
         </div>
+        <!--Blankslate-->
         <div class="wux-col">
-          <div class="wux-card wux-card-flat">
+          <div class="wux-card wux-card-hover">
             <div class="wux-card-body">
-              <b>Customize</b>
+              <b>Blankslate</b>
               <div margin-top="6px">
-                WuX-UI supports customizing your site with hundreds of SCSS Variables.
+                The Blankslate component provides error messages when the original information is missing.
               </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/blankslate.html" class="wux-btn wux-btn-text">Go</a>
             </div>
           </div>
         </div>
+        <!--Breadcrumb-->
         <div class="wux-col">
-          <div class="wux-card wux-card-flat">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Breadcrumb</b>
+              <div margin-top="6px">
+                The Breadcrumb component is used to express the site hierarchy, all items must be used as links.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/breadcrumb.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-row-xs-1 wux-row-md-2 wux-row-lg-4">
+        <!--Button-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Button</b>
+              <div margin-top="6px">
+                The Button component is used to guide the user through the most basic actions.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/button.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Card-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Card</b>
+              <div margin-top="6px">
+                The Card component is used as a basic container and is available in both flat and floating styles.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/card.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Collapse-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Collapse</b>
+              <div margin-top="6px">
+                The Collapse component is used for scenes where information needs to be collapsed.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/collapse.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Dialog-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Dialog</b>
+              <div margin-top="6px">
+                The Dialog component can be used as an important reminder to the user.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/dialog.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-row-xs-1 wux-row-md-2 wux-row-lg-4">
+        <!--Dropdown-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Dropdown</b>
+              <div margin-top="6px">
+                The Dropdown component is used to hold less important content in a limited space.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/dropdown.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Form-Checks-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Form-Checks</b>
+              <div margin-top="6px">
+                The Form-Checks component is used when multiple options can be selected in the selection.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/form-checks.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Form-Input-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Form-Input</b>
+              <div margin-top="6px">
+                The Form-Input component is an input box, which can be divided into single line and multi-line.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/form-input.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Form-Radios-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Form-Radios</b>
+              <div margin-top="6px">
+                The Form-Radios component is used when only a single option can be selected in the selection.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/form-radios.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-row-xs-1 wux-row-md-2 wux-row-lg-4">
+        <!--Form-Range-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Form-Range</b>
+              <div margin-top="6px">
+                The Form-Range component is used when fully accurate values aren't need.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/form-range.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Form-Select-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Form-Select</b>
+              <div margin-top="6px">
+                The Form-Select component is single-selectable only and takes up only a line of space.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/form-select.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Form-Upload-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Form-Upload</b>
+              <div margin-top="6px">
+                The Form-Upload component is used in forms where files need to be uploaded.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/form-upload.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Header-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Header</b>
+              <div margin-top="6px">
+                The Header component is placed at the top of the page and is used to navigate the page.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/header.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-row-xs-1 wux-row-md-2 wux-row-lg-4">
+        <!--Jumbotron-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Jumbotron</b>
+              <div margin-top="6px">
+                The Jumbotron component is used to indicate the page focus title, or tagline.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/jumbotron.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--List-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>List</b>
+              <div margin-top="6px">
+                The List component is used to display multiple contents and can also be used as navigation.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/list.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Loading-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Loading</b>
+              <div margin-top="6px">
+                The Loading component indicates that the content or component is loading.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/loading.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Progress-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Progress</b>
+              <div margin-top="6px">
+                The Progress component acts as a progress bar and can be used together with Loading.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/progress.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-row-xs-1 wux-row-md-2 wux-row-lg-4">
+        <!--Search-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Search</b>
+              <div margin-top="6px">
+                The Search component is more suitable for search purposes than the Input component.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/search.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Tab-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Tab</b>
+              <div margin-top="6px">
+                The Tab component is used to distinguish between multiple tabs and select them.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/tab.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Tables-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Tables</b>
+              <div margin-top="6px">
+                The Tables component is used to display multiple profiles in a neat and easy-to-read manner.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/tables.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Tag-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Tag</b>
+              <div margin-top="6px">
+                The Tag components can represent topics and display them in a small space.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/tag.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wux-row-xs-1 wux-row-md-2 wux-row-lg-4">
+        <!--Tooltip-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Tooltip</b>
+              <div margin-top="6px">
+                The Tooltip component is displayed on mouse hover and is used to prompt the user.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="components/tooltip.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <h2>Layout</h2>
+      <div class="wux-row-xs-1 wux-row-md-2 wux-row-lg-2">
+        <!--Container-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Container</b>
+              <div margin-top="6px">
+                The basic element of the page, which must be used when using the grid.
+              </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="layout/container.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Responsive-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
             <div class="wux-card-body">
               <b>Responsive</b>
               <div margin-top="6px">
-                WuX-UI has a modern, responsive grid that displays well on any device.
+                The foundation for building responsive web pages, including grids, etc.
               </div>
+            </div>
+            <div class="wux-card-footer">
+              <a href="layout/responsive.html" class="wux-btn wux-btn-text">Go</a>
             </div>
           </div>
         </div>
       </div>
       
-      <div class="wux-row-xs-1 wux-row-sm-2 wux-row-md-4">
+      <h2>Utilities</h2>
+      <div class="wux-row-xs-1 wux-row-sm-3 wux-row-lg-6">
+        <!--Introduction-->
         <div class="wux-col">
-          <div class="wux-card wux-card-flat">
+          <div class="wux-card wux-card-hover">
             <div class="wux-card-body">
-              <b>Lightweight</b>
-              <div margin-top="6px">
-                WuX-UI is much smaller in size than other frameworks with common components.
-              </div>
+              <b>Introduction</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/introduction.html" class="wux-btn wux-btn-text">Go</a>
             </div>
           </div>
         </div>
+        <!--Align-->
         <div class="wux-col">
-          <div class="wux-card wux-card-flat">
+          <div class="wux-card wux-card-hover">
             <div class="wux-card-body">
-              <b>Dark Mode</b>
-              <div margin-top="6px">
-                WuX-UI comes natively with a dark mode, which can be enabled with [dark-mode].
-              </div>
+              <b>Align</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/align.html" class="wux-btn wux-btn-text">Go</a>
             </div>
           </div>
         </div>
+        <!--Background-->
         <div class="wux-col">
-          <div class="wux-card wux-card-flat">
+          <div class="wux-card wux-card-hover">
             <div class="wux-card-body">
-              <b>Animation</b>
-              <div margin-top="6px">
-                WuX-UI component animations are beautiful. Made with CSS 3 native properties.
-              </div>
+              <b>Background</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/background.html" class="wux-btn wux-btn-text">Go</a>
             </div>
           </div>
         </div>
+        <!--Borders-->
         <div class="wux-col">
-          <div class="wux-card wux-card-flat">
+          <div class="wux-card wux-card-hover">
             <div class="wux-card-body">
-              <b>Chinese Support</b>
-              <div margin-top="6px">
-                WuX-UI uses Inter + Noto Sans SC font by default to make the font display unobtrusive.
-              </div>
+              <b>Borders</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/borders.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Float-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Float</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/float.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Font-Size-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Font-Size</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/fontsize.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+        
+      <div class="wux-row-xs-1 wux-row-sm-2 wux-row-lg-6">
+        <!--Margin-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Margin</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/margin.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Opacity-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Opacity</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/opacity.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Overflow-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Overflow</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/overflow.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Padding-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Padding</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/padding.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Text-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Text</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/text.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Visibility-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Visibility</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="utilities/visibility.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <h2>Customize</h2>
+      <div class="wux-row-xs-1 wux-row-sm-2 wux-row-lg-4">
+        <!--Color-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Color</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="customize/color.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Components-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Components</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="customize/components.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Layout-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Layout</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="customize/layout.html" class="wux-btn wux-btn-text">Go</a>
+            </div>
+          </div>
+        </div>
+        <!--Prefix-->
+        <div class="wux-col">
+          <div class="wux-card wux-card-hover">
+            <div class="wux-card-body">
+              <b>Prefix</b>
+            </div>
+            <div class="wux-card-footer">
+              <a href="customize/prefix.html" class="wux-btn wux-btn-text">Go</a>
             </div>
           </div>
         </div>
       </div>
       
-      <div class="wux-typo" text-align=>
-        <footer>
-          Copyright 2022 WuX-UI. <a href="https://github.com/wux-ui">Github</a> / <a href="https://docs.wux-ui.tk/">Docs</a>
-        </footer>
-      </div>
+      
+      <link rel="import" href="include/footer.html" is="ui-import">
     </div>
   </body>
 </html>
