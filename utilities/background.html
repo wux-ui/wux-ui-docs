@@ -10,6 +10,12 @@
     <!--Polyfill-->
     <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
     <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
   </head>
@@ -25,22 +31,54 @@
       <div class="wux-typo" margin-bottom="10px">
         <h2>Background Color</h2>
         <p>Use the <code>bg-color</code> attribute to apply the color.</p>
+        
+        <details class="wux-collapse">
+          <summary>Example</summary>
+          <div>
+            <p bg-color="#ABCDEF">This sentence has background color.</p>
+            <pre><code>&lt;p bg-color="#ABCDEF"&gt;This sentence has background color.&lt;/p&gt;</code></pre>
+          </div>
+        </details>
       </div>
       
       <div class="wux-typo" margin-bottom="10px">
         <h2>Background Image</h2>
-        <p>Use the <code>bg-image</code> attribute to apply a background image (URL).</p>
+        <p>Use the <code>bg-img</code> attribute to apply a background image (URL).</p>
+        
+        <details class="wux-collapse">
+          <summary>Example</summary>
+          <div>
+            <p bg-img="https://github.githubassets.com/pinned-octocat.svg">This sentence has background image.</p>
+            <pre><code>&lt;p bg-img="https://github.githubassets.com/pinned-octocat.svg"&gt;This sentence has background image.&lt;/p&gt;</code></pre>
+          </div>
+        </details>
       </div>
       
       <div class="wux-typo" margin-bottom="10px">
         <h2>Background Repeat</h2>
         <p>The <code>bg-repeat</code> attribute can set whether the picture should be repeated or not, see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat">MDN</a> for details.</p>
+        
+        <details class="wux-collapse">
+          <summary>Example</summary>
+          <div>
+            <p bg-img="https://github.githubassets.com/pinned-octocat.svg" bg-repeat="no-repeat">This sentence has background image and no-repeat.</p>
+            <pre><code>&lt;p bg-img="https://github.githubassets.com/pinned-octocat.svg" bg-repeat="no-repeat"&gt;This sentence has background image and no-repeat.&lt;/p&gt;</code></pre>
+          </div>
+        </details>
       </div>
       
       <div class="wux-typo" margin-bottom="10px">
         <h2>Background Position</h2>
         <p>The <code>bg-position</code> attribute positions the background image, see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-position">MDN</a> for details.</p>
         <p>You can also use <code>bg-positon-x</code> and <code>bg-position-y</code> to set the position of the background image for the horizontal and vertical axes respectively.</p>
+        
+        <details class="wux-collapse">
+          <summary>Example</summary>
+          <div>
+            <p bg-img="https://github.githubassets.com/pinned-octocat.svg" bg-repeat="no-repeat" bg-position="right">This sentence has background image, no-repeat and on the right.</p>
+            <pre><code>&lt;p bg-img="https://github.githubassets.com/pinned-octocat.svg" bg-repeat="no-repeat" bg-position="right"&gt;This sentence has background image, no-repeat and on the right.&lt;/p&gt;</code></pre>
+          </div>
+        </details>
       </div>
       
       <div margin-top="40px"></div>
