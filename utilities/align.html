@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Align - WuX-UI</title>
+    <link rel="icon" href="../src/img/logo.svg">
+    <link href="../src/css/wux.css" rel="stylesheet">
+    <!--HTML import-->
+    <script src="../src/js/html-import/html-import.js"></script>
+    <script src="../src/js/html-import/html-import-polyfill.js"></script>
+    <!--Polyfill-->
+    <script src="../src/js/attr-polyfill/attr-polyfill.js"></script>
+    <script src="../src/js/dialog-polyfill/dialog-polyfill.js"></script>
+    <!--Highlight-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/css.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.6.0/build/languages/scss.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+  </head>
+  <body class="wux-header-fixed-margin">
+    <link rel="import" href="../include/header.html" is="ui-import">
+    
+    <div class="wux-container">
+      <div class="wux-jumbotron">
+        <h1 class="wux-jumbotron-title"><b class="wux-jumbotron-title-bold">WuX-UI</b> Align</h1>
+      </div>
+      
+      <!--Get Start-->
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Text-Align</h2>
+        <p>Use <code>text-align</code> to set the text alignment direction, see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">MDN</a> for details.</p>
+        
+        <details class="wux-collapse">
+          <summary>
+            Example
+          </summary>
+          <div>
+            <p text-align="left">Left</p>
+            <p text-align="center">Center</p>
+            <p text-align="right">Right</p>
+          </div>
+        </details>
+      </div>
+      
+      <div class="wux-typo" margin-bottom="10px">
+        <h2>Vertical-Align</h2>
+        <p>Use text-align to set the vertical direction of the element, see <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align">MDN</a> for details.</p>
+        
+        <h3>Use Length</h3>
+        <p>You can use the <code>vertical-align-num</code> attribute to apply the vertical-align of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length">&lt;length&gt;</a>.</p>
+      </div>
+      
+      <div margin-top="40px"></div>
+      <float-clear>
+        <a href="../" class="wux-btn wux-btn-text" float="left">Back</a>
+      </float-clear>
+      
+      <link rel="import" href="../include/footer.html" is="ui-import">
+    </div>
+  </body>
+</html>
